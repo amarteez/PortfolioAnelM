@@ -28,15 +28,15 @@ const projects = [
   },
   {
     title: {
-      es: 'Task Manager',
-      en: 'Task Manager'
+      es: 'Portfolio',
+      en: 'Portfolio'
     },
     description: {
-      es: 'En esta website puedes crear tareas, tacharlas cuando ya las terminas y borrarlas también. (En desarrollo).',
-      en: 'On this website, you can create tasks, check them off when completed, and delete them as well. (Under development).'
+      es: 'Este portfolio destaca mis proyectos y habilidades en diseño y desarrollo web FullStack. Utiliza tecnologías modernas para ofrecer una experiencia de navegación fluida y adaptativa',
+      en: 'This portfolio highlights my projects and skills in Full-Stack web design and development. It utilizes modern technologies to provide a smooth and adaptive browsing experience.'
     },
-    liveUrl: 'http://192.168.1.12:3001/',
-    technologies: ['JavaScript', 'React'],
+    liveUrl: 'https://portfolioanelm.onrender.com/',
+    technologies: ['JavaScript', 'React', 'CSS3', 'HTML5'],
   },
 ];
 
