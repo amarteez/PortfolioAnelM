@@ -1,0 +1,22 @@
+/* About.css */
+.about-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: justify; /* Justifica el texto */
+  max-width: 700px; /* Ancho máximo para el texto, ajusta según sea necesario */
+  margin-left: auto; /* Centra horizontalmente el contenedor */
+  margin-right: auto; /* Centra horizontalmente el contenedor */
+}

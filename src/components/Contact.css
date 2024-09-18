@@ -1,0 +1,25 @@
+.contact-section {
+  padding: 2rem;
+  text-align: center;
+  color: rgb(13, 49, 128);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.email-link {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}

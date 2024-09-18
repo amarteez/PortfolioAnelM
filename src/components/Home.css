@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem; /* Ajusta el padding para dejar espacio */
+  background-color: transparent; /* Elimina el fondo del componente */
+  color: #ffffff;
+  min-height: 10vh; /* Ajusta la altura mínima para evitar el exceso */
+}
+
+.home-content {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  text-align: center; /* Centra el contenido en la sección */
+}
+
+.name {
+  font-family: 'Dancing Script', cursive; /* Aplica la fuente Dancing Script */
+  font-size: 6rem;
+  color: #ffffff; /* Color del nombre */
+  margin-bottom: 1rem;
+}
+
+.typed-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #E0E0E0; /* Color del texto del efecto de escritura */
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .name {
+    font-size: 2rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .typed-text {
+    font-size: 1.4rem; /* Tamaño de fuente reducido para pantallas pequeñas */
+  }
+}

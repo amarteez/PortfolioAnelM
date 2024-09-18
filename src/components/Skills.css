@@ -1,0 +1,66 @@
+.skills-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+  border: 2px solid #ffffff; /* Borde blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 1rem;
+  width: 250px;
+  height: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para las tarjetas */
+}
+
+.skill-icon {
+  width: 50px; /* Ajuste del ancho del icono */
+  height: 50px; /* Ajuste de la altura del icono */
+  object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+  margin-right: 1rem;
+}
+
+.skill-info {
+  text-align: left;
+}
+
+.skill-name {
+  font-size: 1.5rem;
+  color: #ffffff; /* Color del nombre */
+  margin: 0;
+}
+
+.skill-level {
+  font-size: 1rem;
+  color: #cccccc; /* Color del nivel de habilidad */
+  margin-top: 0.5rem;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+}

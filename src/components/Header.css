@@ -1,0 +1,205 @@
+/* Estilos del Header */
+.header {
+  background-color: transparent;
+  padding: 0.5rem 1rem; /* Ajusta el padding para que el header no ocupe demasiado espacio */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between; /* Alinea elementos a izquierda y derecha */
+  align-items: center;
+  flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+  box-sizing: border-box; /* Incluye padding en el cálculo del ancho total */
+}
+
+/* Contenedor del CV y cambio de idioma */
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Botón de CV con menú desplegable */
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.cv-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #004275; /* Color sólido dentro del dropdown */
+  border-radius: 10px;
+  padding: 1rem;
+  top: 2.5rem; /* Despliega debajo del botón */
+  z-index: 1;
+}
+
+.cv-dropdown-content a {
+  color: #9BA8AB;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.cv-dropdown-content a:hover {
+  background-color: #11212D;
+  color: white;
+  border-radius: 10px;
+}
+
+.cv-dropdown:hover .cv-dropdown-content {
+  display: block;
+}
+
+/* Estilos de los botones */
+.btn {
+  background-color: #253745; /* Color sólido dentro del botón */
+  color: #9BA8AB;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem; /* Tamaño de fuente base */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: 2px solid #06141B;
+}
+
+.btn:hover {
+  background-color: #11212D;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-list a {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Estilos para el menú de navegación */
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #253745; /* Color sólido dentro del menú */
+  border-radius: 50px;
+  border: 2px solid #06141B;
+  overflow: hidden; /* Evita el desbordamiento horizontal */
+  flex: 1; /* Permite que el menú ocupe el espacio disponible */
+  justify-content: space-around; /* Distribuye el espacio entre los elementos */
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list a {
+  color: #9BA8AB;
+  text-decoration: none;
+  font-size: 1rem; /* Tamaño de fuente base */
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: #11212D;
+  color: white;
+  border-radius: 30px;
+}
+
+/* Botón de cambio de idioma en la parte derecha */
+.language-btn {
+  background-color: #253745; /* Color sólido dentro del botón */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #06141B;
+}
+
+.language-btn:hover {
+  background-color: #06141B;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.language-btn:active {
+  background-color: #06141B;
+  transform: scale(0.98) translateY(0px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .header {
+    padding: 0.5rem;
+    flex-direction: row; /* Mantiene los elementos en una sola fila */
+    flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+    height: auto; /* Permite que el header crezca según el contenido */
+  }
+
+  .header-left, .header-right {
+    margin: 0;
+    width: auto; /* Ajusta el ancho para evitar el desbordamiento */
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+  }
+
+  .cv-dropdown {
+    margin-right: 1rem; /* Ajusta el margen para pantallas pequeñas */
+  }
+
+  .btn, .language-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .nav-list {
+    padding: 0.5rem;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Mantiene los elementos en una sola línea */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    justify-content: center; /* Centra los elementos en pantallas pequeñas */
+  }
+
+  .nav-list li {
+    margin: 0;
+  }
+
+  .nav-list a {
+    font-size: 0.7rem; /* Tamaño de fuente reducido para pantallas pequeñas */
+    padding: 0.3rem 0.6rem; /* Reduce el padding para pantallas pequeñas */
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    align-items: center; /* Alinea los elementos verticalmente en pantallas grandes */
+  }
+
+  .header-left {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .nav-list {
+    flex: 2;
+    justify-content: center;
+  }
+
+  .header-right {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .btn, .language-btn {
+    font-size: 1.2rem; /* Tamaño de fuente aumentado para pantallas grandes */
+  }
+
+  .nav-list a {
+    font-size: 1.2rem; /* Tamaño de fuente aumentado para pantallas grandes */
+  }
+}

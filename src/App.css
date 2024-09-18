@@ -1,0 +1,30 @@
+/* General Styles for Background and Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #151F48, #256DD3, #5AA5F4, #536889, #AFC5E8); /* Gradiente de fondo */
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem; /* Espaciado alrededor del contenido de cada sección */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  section {
+    padding: 1rem; /* Menos espaciado en pantallas pequeñas */
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
