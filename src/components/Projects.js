@@ -61,7 +61,6 @@ const Projects = ({ language }) => {
                   <span key={techIndex} className="technology">{tech}</span>
                 ))}
               </div>
-              {/* Botón pequeño "Visitar" */}
               <a 
                 href={project.liveUrl}
                 target="_blank"

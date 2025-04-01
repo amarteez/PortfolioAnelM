@@ -6,9 +6,9 @@
 }
 
 .projects-section h2 {
-  font-size: 2rem; /* Aumentado el tamaño del texto para "Proyectos" */
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 1rem; /* Margen inferior para separar del contenido */
+  margin-bottom: 1rem;
 }
 
 .projects-container {
@@ -73,7 +73,7 @@
   font-size: 0.9rem;
 }
 
-/* Estilos del botón "Visitar" */
+
 .visit-button {
   display: inline-block;
   margin-top: 1rem;
@@ -91,7 +91,7 @@
   background-color: #1d4b91;
 }
 
-/* Responsividad para pantallas más pequeñas */
+
 @media (max-width: 600px) {
   .project-item {
     max-width: 100%;

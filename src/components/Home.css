@@ -5,29 +5,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8rem; /* Ajusta el padding para dejar espacio */
-  background-color: transparent; /* Elimina el fondo del componente */
+  padding: 8rem;
+  background-color: transparent;
   color: #ffffff;
-  min-height: 10vh; /* Ajusta la altura mínima para evitar el exceso */
+  min-height: 10vh;
 }
 
 .home-content {
   opacity: 1;
   transition: opacity 1s ease-in-out;
-  text-align: center; /* Centra el contenido en la sección */
+  text-align: center;
 }
 
 .name {
-  font-family: 'Dancing Script', cursive; /* Aplica la fuente Dancing Script */
+  font-family: 'Dancing Script', cursive;
   font-size: 6rem;
-  color: #ffffff; /* Color del nombre */
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .typed-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
-  color: #E0E0E0; /* Color del texto del efecto de escritura */
+  color: #E0E0E0;
   margin-bottom: 2rem;
 }
 
@@ -52,13 +52,12 @@
   transform: scale(1.2);
 }
 
-/* Ajustes para pantallas pequeñas */
 @media (max-width: 600px) {
   .name {
-    font-size: 2rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    font-size: 2rem;
   }
 
   .typed-text {
-    font-size: 1.4rem; /* Tamaño de fuente reducido para pantallas pequeñas */
+    font-size: 1.4rem;
   }
 }

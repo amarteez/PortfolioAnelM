@@ -11,7 +11,6 @@ const Header = ({ language, setLanguage }) => {
   return (
     <header className="header">
       <div className="header-left">
-        {/* Botón CV con menú desplegable */}
         <div className="cv-dropdown">
           <button className="btn" onClick={toggleCVDropdown}>
             CV
@@ -36,7 +35,6 @@ const Header = ({ language, setLanguage }) => {
       </nav>
 
       <div className="header-right">
-        {/* Botón de cambio de idioma */}
         <button onClick={() => setLanguage(language === 'es' ? 'en' : 'es')} className="btn language-btn">
           {language === 'es' ? 'English' : 'Español'}
         </button>
