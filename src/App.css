@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #151F48, #256DD3, #5AA5F4, #536889, #AFC5E8); /* Gradiente de fondo */
+  background: linear-gradient(to bottom, #151F48, #256DD3, #5AA5F4, #536889, #AFC5E8); 
 }
 
 

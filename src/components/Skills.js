@@ -16,7 +16,7 @@ const skills = [
   { name: 'Docker', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_logo.svg' },
   { name: 'Git', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg' },
   { name: 'Socket.io', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg' },
-  { name: 'Unit Testing (Jest/xUnit)', iconUrl: 'https://cdn.worldvectorlogo.com/logos/jest-2.svg' },
+  { name: 'Unit Testing', iconUrl: 'https://cdn.worldvectorlogo.com/logos/jest-2.svg' },
   { name: 'SQL Server', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_server_2014_logo.svg' }
 ];
 
@@ -30,9 +30,6 @@ const Skills = ({ language }) => {
             <img src={skill.iconUrl} alt={skill.name} className="skill-icon" />
             <div className="skill-info">
               <h3 className="skill-name">{skill.name}</h3>
-              <p className="skill-level">
-                {language === 'es' ? skill.level : skill.level === 'Básico' ? 'Basic' : skill.level === 'Intermedio' ? 'Intermediate' : 'Expert'}
-              </p>
             </div>
           </div>
         ))}
